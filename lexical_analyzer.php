@@ -34,7 +34,7 @@
  * @package questions
  */
 
-defined('MOODLE_INTERNAL') || die();
+
 
 require_once($CFG->dirroot.'/question/type/correctwriting/question.php');
 require_once($CFG->dirroot.'/question/type/correctwriting/sequence_analyzer.php');
