@@ -45,21 +45,7 @@ require_once($CFG->dirroot.'/blocks/formal_langs/block_formal_langs.php');
 
 class qtype_correctwriting_lexical_analyzer extends qtype_correctwriting_abstract_analyzer {
 
-    /**
-     * Do all processing and fill resultstringpairs and resultmistakes fields.
-     *
-     * You are normally don't want to overload it. Overload analyze() and bypass() instead.
-     * Passed responsestring could be null, than object used just to find errors in the answers, token count etc...
-     * When called without params just creates empty object to call analyzer-dependent functions on.
-     * @throws moodle_exception if invalid number of string pairs
-     * @param qtype_correctwriting_question $question
-     * @param qtype_correctwriting_string_pair $basepair a pair, passed as input
-     * @param block_formal_langs_abstract_language $language a language
-     * @param bool $bypass false if analyzer should work, true if it should just allow subsequent analyzers to work.
-     */
-    public function __construct($question = null, $basepair = null, $language = null, $bypass = true) {
-        parent::__construct($question, $basepair, $language, $bypass);
-    }
+
 
     /**
      * Do real analyzing and fill resultstringpairs and resultmistakes fields.
