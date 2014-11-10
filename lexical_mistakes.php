@@ -32,7 +32,7 @@ require_once($CFG->dirroot.'/question/type/correctwriting/response_mistakes.php'
 class qtype_correctwriting_lexical_mistake extends qtype_correctwriting_response_mistake {
 
     public function mistake_key() {
-        return '';//TODO - implement actually
+        return '';
     }
 }
 
